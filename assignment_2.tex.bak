@@ -1,0 +1,42 @@
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsfonts}
+
+% Header
+\title{Matrices and Linear Algebra notation\\ \large Lesson 4 - Assignment}
+\author{Evans N. Karago}
+\date{\today}
+
+% Begin document
+\begin{document}
+	% Include header
+	\maketitle
+	Write the following three expressions in \LaTeX\ math display mode. All the expressions are real data science formulas.
+	% Question 1.
+	\section*{1. A general matrix equation.}
+	
+	\[
+		A \mathbf{x} = \mathbf{b}	
+	\]
+	where, $A$ is a $3$ \times $3$ matrix, $\mathbf{x}$ and $\mathbf{b}$ are column vector of size $3$.
+	
+	% Question 2.
+	\section*{2. Determinant of a $2$ x $2$ matrix}
+	\[
+		\det(A) = \begin{vmatrix}
+			a_{11} & a_{12} \\
+			a_{21} & a_{22}\\
+\end{vmatrix} = 
+a_{11}a_{22} - a_{12}a_{21}		
+	\]
+	
+	% Question 3.
+	\section*{3. Covariance matrix}	
+	
+	\[
+		\Sigma = \frac{1}{n}\sum_{i = 1}^{n} \left(\mathbf{x}_i - \boldsymbol{\mu} \right)	\left(\mathbf{x}_i - \boldsymbol{\mu}\right)^{T}
+	\]
+	
+\end{document}

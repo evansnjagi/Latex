@@ -1,0 +1,24 @@
+% Packages
+\documentclass[11pt]{article}
+
+% Begin document
+\begin{document}
+
+\section*{Assignment 1}
+	Write the formula for euclidean distance between points x and y in n-dimension:
+	\[
+		d(x,y) = \sqrt{\sum_{i=1}^{n} \left(x_i  - y_i \right)^2}	
+	\]
+	
+\section*{Log likelihood function}
+
+\[
+	\ell(\theta) = \sum_{i=1}^{n}\log p\left(x_i\mid \theta\right)
+\]
+
+\section*{Probability density function}
+\[
+	p(x) = \frac{1}{\sqrt{2\pi\sigma^{2}}} \int_{-\infty}^{x}e^{-\frac{t^{2}}{2\sigma^{2}}} \, dt
+\]
+
+\end{document}

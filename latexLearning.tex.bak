@@ -1,0 +1,39 @@
+\documentclass[11pt]{article}
+\usepackage{float}
+\usepackage{amssymb, amsmath, amsfonts}
+\begin{document}
+\section{Students Exams Score Analysis }
+You are preparing a data analysis report for a classroom dataset. The goal is to analyze student performance using vectors and basic statistics, then present it professionally in LaTeX. This aligns directly with data science practice: organizing data, computing summaries, and presenting results clearly.\\[6pt]
+Dataset:
+\begin{table} [H]
+\centering
+\def \arraystrech{3inc}
+\begin{tabular}{|l|c|c|c|}
+\hline
+Student & Math &Phsic & Chem\\
+\hline
+Alice & 90 & 85 & 92\\
+Bob & 78 & 82 & 88\\
+Charlie & 85 &89 & 84\\
+Diana & 92 & 95 & 90\\
+Ethan & 70 & 75 &80\\ \hline 
+\end{tabular}
+\caption{Dataset table}
+\end{table}
+This is the computed and converted table:
+\begin{table}[H]
+\centering
+\def \arraystrech{3cm}
+\begin{tabular}{l || c c c}
+\hline
+Students & Marks Vector & Total $T_i$ & Average $m_i$\\ \hline
+ Alice & $M_{Alice}\left[90, 85, 92\right]^T$ & 267 & 89.0 \\ \hline
+ Bob & $M_{Bob} \left[78, 82, 88\right]^T$ & 248& 82.67\\ \hline
+Charlie & $M_{Chalie} \left[85, 89, 84\right]^T$ &258& 86\\ \hline
+Diana & $M_{Diana}\left[92, 95, 90\right]^T$ & 277 & 92.33\\ \hline
+Ethan & $M_{Ethan}\left[70, 75 80\right]^T$ & 225 & 75\\ \hline
+\end{tabular}
+\end{table}
+Finally, standard deviation for each student is computed by the following formula:
+$$\sigma_i = \sqrt{\frac{1}{3}\sum_{j=1}^3 \left(m_{ij} - m_i\right)^2}$$
+\end{document}
