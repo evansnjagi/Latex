@@ -77,6 +77,35 @@ X \sim \text{Binomial}(n, p)
 \[
 X \sim \text{Poisson}(\lambda)
 \]
+\section*{Statistical Estimate}
+
+An estimator approximates unknown population parameter from sample data. The estimated mean and variance are writen as:
+
+\[
+\hat{\mu} \quad \text{and} \quad \hat{\sigma}^2
+\]
+
+In regression analysis, the estimated coefficients and predicted values are writen as:
+
+\[
+\hat{\beta} \quad \text{and} \quad \hat{y}
+\]
+
+\section*{Bayesian Notation}
+
+Baye's theorem describes how to update a believe about parameter $\theta$ after observing data $\mathbf{x}$.
+
+\[
+p(\theta \mid \mathbf{x}) = \frac{p(\mathbf{x}\mid\theta)\,p(\theta)}{P(\mathbf{x})}
+\]
+
+In machine learning literature, this is writen in its compact form as:
+
+\[
+p(\theta \mid \mathbf{x}) \propto p(\mathbf{x} \mid \theta) \, p(\theta)
+\]
+
+This is read as posterior is proportional to likelihood times prior.
 \end{document}
 
 
