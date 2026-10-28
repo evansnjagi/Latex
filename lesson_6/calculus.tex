@@ -1,0 +1,65 @@
+% Document class
+\documentclass[11pt]{article}
+
+% Preamble
+% Packages
+\usepackage{amsmath, amsfonts, amssymb}
+
+% Make title
+\title{Lesson 6 -- Calculus, Derivatives, and Gradients}
+\author{Evans N. Karago}
+\date{\today}
+
+% Begin document
+\begin{document}
+\maketitle
+\section*{Derivatives}
+The derivative of $y$ with respect to $x$ is:
+
+\[
+\frac{dy}{dx}
+\]
+
+The partial derivative of $f$ with respect to $x$ is:
+
+\[
+\frac{\partial f}{\partial x}
+\]
+\section*{Gradients}
+The gradient of the loss function $\mathcal{L}$ with respect to parameter $\theta$ is:
+
+\[
+\nabla_{\theta}\mathcal{L}
+\]
+
+The gradient descent update rule is:
+
+\[
+\theta = \theta - \alpha\nabla_{\theta}\mathcal{L}
+\]
+where $\alpha$ is the learning rate.
+
+\section*{Limits}
+The limit of $f(x)$ as $x$ approaches $a$ is:
+
+\[
+\lim_{x \to a} f(x)
+\]
+
+As $x$ approaches infinity:
+
+\[
+\lim_{x \to \infty}f(x)
+\]
+
+As $x$ approaches zero:
+
+\[
+\lim_{x \to 0} f(x)
+\]
+
+
+
+
+
+\end{document}
